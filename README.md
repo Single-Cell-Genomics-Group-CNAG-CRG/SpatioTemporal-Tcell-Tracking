@@ -13,6 +13,7 @@ Each directory described above contains a `scripts/` with the JN and `reports/` 
 outputs of JN executed for more than one dataset are reported as HTMLs. 
 
 Inside each `SCGRES_*/` subdirectory we can either have executed JNs or HTML repots of JNs of the following:
+	
 	*Quality control*
 		`2.0-qc_cellranger_mapping.html`
 		`2.1-more_qc_and_filtering.html`
