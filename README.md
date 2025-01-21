@@ -12,7 +12,7 @@ The `utils/` folder contains some extra utilities such as functions in the `bin.
 Each directory described above contains a `scripts/` with the JN and `reports/` with the HTML output results of corresponding JN that were run with data of that specific folder. Therefore,
 outputs of JN executed for more than one dataset are reported as HTMLs. 
 
-Inside each `SCGRES_*/` subdirectory we can either have executed JNs or HTML repots of JNs of the following:
+Inside each `SCGRES_*/` subdirectory we can either have executed JNs or HTML reports of JNs of the following:
 	
 	*Quality control*
 		`2.0-qc_cellranger_mapping.html`
@@ -25,3 +25,16 @@ Inside each `SCGRES_*/` subdirectory we can either have executed JNs or HTML rep
 
 	*First annotation* (level one of annotation of cell types per library/sample)
 		`4.0-*_l1.ipynb`
+
+Inside `scripts/` in the parent directory we have the following:
+
+	*Annotation of all immune cell infiltrates in Tumor (TME)
+		`4.0.1-Integration_l1_Tumor.ipynb`
+	
+	*Annotations of all T-cells in Tumor (TME)
+		`4.2-T-cells_Tumor.ipynb`
+		`4.2.1-CD8_analysis.ipynb`
+		`4.2.2-CD4_analysis.ipynb`
+
+	*Annotations of all T-cells in PBMCs time points
+		`4.2.2-T-cell_annotation_PBMC.ipynb`
