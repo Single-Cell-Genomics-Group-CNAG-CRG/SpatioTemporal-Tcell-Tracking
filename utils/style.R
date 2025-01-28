@@ -64,15 +64,6 @@ pbmc_pal = c("0"='#41ae76',
               "14_1"="#87CEFA",
               "15"="#ac9d93ff")
 
-stromal_pal = list("Tumor SEMA3D"="#fdae6b", 
-                    "Tumor CDH18"="#de77ae",
-                    "Tumor Cycling"="#A58AFF",
-                    "Tumor SGCZ"="#ffdd55ff",
-                    "Tumor SEMA6D"="#fb6a4a",
-                    "Fibroblast"="#80cdc1",
-                    "Tumor TENM2"="#00BA38",
-                    "Tumor FBN2"="#dfc27d",
-                    "Endothelial cells"='#ffaaaaff')
 
 exp_pal = c("Naive CD8"="#80e5ffff",
             "Effector Hobit CD8"="#87ceebff",
@@ -88,11 +79,9 @@ exp_pal = c("Naive CD8"="#80e5ffff",
             "MAIT"="#808080ff")
 
 
-tp_pal = c("T0"="#525252",
-           "T1"="#ffff00ff",
-           "T2"="#D73027",
-           "T3"="#67000d",              
-           "T4"="#FF7F00",
-           "T5"="#6A3D9A",
-           "T6"="#C51B7D",
-           "T7"="#8C510A")
+th_pal = c('S0'='#aad400ff',
+           'S1'='#89a02cff',
+           'S2'='#eef4d7ff',
+           'S3'='#9ACD32',
+           'S4'='#00BFFF',
+           'S5'='#d4ff2aff')

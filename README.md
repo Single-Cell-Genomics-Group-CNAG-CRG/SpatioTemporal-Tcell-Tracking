@@ -25,6 +25,11 @@ Inside each `SCGRES_*/` subdirectory we can either have executed JNs or HTML rep
 
 	*First annotation* (level one of annotation of cell types per library/sample)
 		`4.0-*_l1.ipynb`
+        
+    *In experiment folder (SCGRES_124_125) we also have annotation and TCR analysis of this dataset*
+        `4.0.0-Integration.ipynb`
+        `4.0.1-Reclustering_and_Annotation.ipynb`
+        `5.0-TCR_analysis.ipynb`
 
 Inside `scripts/` in the parent directory we have the following:
 
@@ -38,3 +43,17 @@ Inside `scripts/` in the parent directory we have the following:
 
 	*Annotations of all T-cells in PBMCs time points
 		`4.2.2-T-cell_annotation_PBMC.ipynb`
+    
+    *Adding TCR and clonotype analysis
+        `5.0-scRepertoire_PBMC.ipynb`
+        `5.0-scRepertoire_Tumor.ipynb`
+        `5.4-T-helper_clonotypes.ipynb`
+
+    *Check phenotypes of 19 selected OS-T clonotypes*
+        `5.2-Phenotyping_deepTCR.ipynb`
+
+    *Check phenotypes of shared clonotypes TME and Blood*
+        `5.3-TCR_selection.ipynb`
+
+    *41BB positive signature of activation*
+        `5.5-Signature_41BB.ipynb`
