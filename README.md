@@ -2,7 +2,7 @@
 
 Directories contain Jupyter Notebooks (JN) and corresponding HTML reports in order to reproduce the results from this project. Each folder starting by *SCGRES\_\** is a batch of samples of the project:
 - `SCGRES_83_84/`: contains PBMCs cells from blood time points T1,T2,T3
-- `SCGRES_99_100/`: contains CD45+ cell-sorted fraction from the Tumor at timepoint 0 (T0), CD3+ enriched fraction of T0 and PBMCs of time point T5.
+- `SCGRES_99_100/`: contains CD45+ cell-sorted fraction from the Tumor at timepoint 0 (T0), also the CD45- fraction with stromal and tumoral cells, plus CD3+ enriched fraction of T0 and finally PBMCs of time point T5.
 - `SCGRES_105_106/`: contains PBMCs of time point T6.
 - `SCGRES_119_120/`: contains PBMCs of time points T4 and T7.
 - `SCGRES_124_125/`: contains CD3+ cells from *in vitro* culture experiment: cells in 41BB+ fraction, cells in 41BB- fraction and cells from the control condition. 
@@ -43,12 +43,12 @@ Inside `scripts/` in the parent directory we have the following:
 	*Annotations of all T-cells in Tumor (TME)
     
         `4.2-T-cells_Tumor.ipynb`
-		`4.2.1-CD8_analysis.ipynb`
-		`4.2.2-CD4_analysis.ipynb`
+        `4.2.1-CD8_analysis.ipynb`
+        `4.2.2-CD4_analysis.ipynb`
 
 	*Annotations of all T-cells in PBMCs time points
     
-		`4.2.2-T-cell_annotation_PBMC.ipynb`
+        `4.2.2-T-cell_annotation_PBMC.ipynb`
     
     *Adding TCR and clonotype analysis
     
