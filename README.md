@@ -17,25 +17,25 @@ Each directory described above contains a `scripts/` with the JN and `reports/` 
 
 Inside each `SCGRES_*/` subdirectory we can either have executed JNs or HTML reports of JNs of the following:
 	
-	**Quality control**
+**Quality control**
 ```    
         2.0-qc_cellranger_mapping.html
 	2.1-more_qc_and_filtering.html
 	2.2-doublet_detection.html
 ````
 
-	**Pre-processing**
+**Pre-processing**
 ```    
         3.0-normalization_and_embedding_*.ipynb
 	3.2-Clustering_and_filtering_*.ipynb
 ```
 
-	**First annotation** (level one of annotation of cell types per library/sample)
+**First annotation** (level one of annotation of cell types per library/sample)
 ```    
         4.0-*_l1.ipynb
 ```
         
-    **In experiment folder (SCGRES_124_125) we also have annotation and TCR analysis of this dataset**
+**In experiment folder (SCGRES_124_125) we also have annotation and TCR analysis of this dataset**
 ```    
         4.0.0-Integration.ipynb
         4.0.1-Reclustering_and_Annotation.ipynb
@@ -44,40 +44,42 @@ Inside each `SCGRES_*/` subdirectory we can either have executed JNs or HTML rep
 
 Inside `scripts/` in the parent directory we have the following:
 
-	**Annotation of all immune cell infiltrates in Tumor (TME)**
+**Annotation of all immune cell infiltrates in Tumor (TME)**
 ```    
         4.0.1-Integration_l1_Tumor.ipynb
 ```
 	
-	**Annotations of all T-cells in Tumor (TME)**
+**Annotations of all T-cells in Tumor (TME)**
 ```    
         4.2-T-cells_Tumor.ipynb
         4.2.1-CD8_analysis.ipynb
         4.2.2-CD4_analysis.ipynb
 ```
 
-	**Annotations of all T-cells in PBMCs time points**
+**Annotations of all T-cells in PBMCs time points**
 ```    
         4.2.2-T-cell_annotation_PBMC.ipynb
 ```
     
-    **Adding TCR and clonotype analysis**
+**Adding TCR and clonotype analysis**
 ```    
         5.0-scRepertoire_PBMC.ipynb
         5.0-scRepertoire_Tumor.ipynb
         5.4-T-helper_clonotypes.ipynb
 ```
 
-    **Check phenotypes of 19 selected OS-T clonotypes**
+**Check phenotypes of 19 selected OS-T clonotypes**
 ```    
         5.2-Phenotyping_deepTCR.ipynb
 ```
-    **Check phenotypes of shared clonotypes between TME and Blood**
+
+**Check phenotypes of shared clonotypes between TME and Blood**
+
 ```    
         5.3-TCR_selection.ipynb
 ```
 
-    **41BB positive signature of activation**
+**41BB positive signature of activation**
 ```    
         5.5-Signature_41BB.ipynb
 ```
