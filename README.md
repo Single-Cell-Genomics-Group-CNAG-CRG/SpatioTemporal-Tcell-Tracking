@@ -1,5 +1,9 @@
 # Spatio-temporal T cell tracking for personalized TCR-T designs in childhood cancer
 
+This repository contains the scripts that were used to analyze the 10X Genomics Data from the following project:
+
+​Sentís, I., Melero, J. L., Cebria-Xart, A., Grzelak, M., Soto, M., Michel, A., Rovira, Q., Rodriguez-Hernandez, C. J., Caratù, G., Urpi, A., Sauvage, C., Mendizabal-Sasieta, A., Maspero, D., Lavarino, C. E., Pascual-Reguant, A., Castañeda Heredia, A., Muñoz Perez, J. P., Mora, J., Harari, A., … Heyn, H. (2025). Spatio-temporal T cell tracking for personalized TCR-T designs in childhood cancer. Annals of Oncology. https://doi.org/https://doi.org/10.1016/j.annonc.2025.05.530 
+
 Directories contain Jupyter Notebooks (JN) and corresponding HTML reports in order to reproduce the results from this project. Each folder starting by *SCGRES\_\** is a batch of samples of the project:
 - `SCGRES_83_84/`: contains PBMCs cells from blood time points T1,T2,T3
 - `SCGRES_99_100/`: contains CD45+ cell-sorted fraction from the Tumor at timepoint 0 (T0), also the CD45- fraction with stromal and tumoral cells, plus CD3+ enriched fraction of T0 and finally PBMCs of time point T5.
@@ -13,57 +17,67 @@ Each directory described above contains a `scripts/` with the JN and `reports/` 
 
 Inside each `SCGRES_*/` subdirectory we can either have executed JNs or HTML reports of JNs of the following:
 	
-	*Quality control*
-    
-        `2.0-qc_cellranger_mapping.html`
-		`2.1-more_qc_and_filtering.html`
-		`2.2-doublet_detection.html`
+	**Quality control**
+```    
+        2.0-qc_cellranger_mapping.html
+	2.1-more_qc_and_filtering.html
+	2.2-doublet_detection.html
+````
 
-	*Pre-processing*
-    
-        `3.0-normalization_and_embedding_*.ipynb`
-		`3.2-Clustering_and_filtering_*.ipynb`
+	**Pre-processing**
+```    
+        3.0-normalization_and_embedding_*.ipynb
+	3.2-Clustering_and_filtering_*.ipynb
+```
 
-	*First annotation* (level one of annotation of cell types per library/sample)
-    
-        `4.0-*_l1.ipynb`
+	**First annotation** (level one of annotation of cell types per library/sample)
+```    
+        4.0-*_l1.ipynb
+```
         
-    *In experiment folder (SCGRES_124_125) we also have annotation and TCR analysis of this dataset*
-    
-        `4.0.0-Integration.ipynb`
-        `4.0.1-Reclustering_and_Annotation.ipynb`
-        `5.0-TCR_analysis.ipynb`
+    **In experiment folder (SCGRES_124_125) we also have annotation and TCR analysis of this dataset**
+```    
+        4.0.0-Integration.ipynb
+        4.0.1-Reclustering_and_Annotation.ipynb
+        5.0-TCR_analysis.ipynb
+```
 
 Inside `scripts/` in the parent directory we have the following:
 
-	*Annotation of all immune cell infiltrates in Tumor (TME)
-    
-        `4.0.1-Integration_l1_Tumor.ipynb`
+	**Annotation of all immune cell infiltrates in Tumor (TME)**
+```    
+        4.0.1-Integration_l1_Tumor.ipynb
+```
 	
-	*Annotations of all T-cells in Tumor (TME)
-    
-        `4.2-T-cells_Tumor.ipynb`
-        `4.2.1-CD8_analysis.ipynb`
-        `4.2.2-CD4_analysis.ipynb`
+	**Annotations of all T-cells in Tumor (TME)**
+```    
+        4.2-T-cells_Tumor.ipynb
+        4.2.1-CD8_analysis.ipynb
+        4.2.2-CD4_analysis.ipynb
+```
 
-	*Annotations of all T-cells in PBMCs time points
+	**Annotations of all T-cells in PBMCs time points**
+```    
+        4.2.2-T-cell_annotation_PBMC.ipynb
+```
     
-        `4.2.2-T-cell_annotation_PBMC.ipynb`
-    
-    *Adding TCR and clonotype analysis
-    
-        `5.0-scRepertoire_PBMC.ipynb`
-        `5.0-scRepertoire_Tumor.ipynb`
-        `5.4-T-helper_clonotypes.ipynb`
+    **Adding TCR and clonotype analysis**
+```    
+        5.0-scRepertoire_PBMC.ipynb
+        5.0-scRepertoire_Tumor.ipynb
+        5.4-T-helper_clonotypes.ipynb
+```
 
-    *Check phenotypes of 19 selected OS-T clonotypes*
-    
-        `5.2-Phenotyping_deepTCR.ipynb`
+    **Check phenotypes of 19 selected OS-T clonotypes**
+```    
+        5.2-Phenotyping_deepTCR.ipynb
+```
+    **Check phenotypes of shared clonotypes between TME and Blood**
+```    
+        5.3-TCR_selection.ipynb
+```
 
-    *Check phenotypes of shared clonotypes between TME and Blood*
-    
-        `5.3-TCR_selection.ipynb`
-
-    *41BB positive signature of activation*
-    
-        `5.5-Signature_41BB.ipynb`
+    **41BB positive signature of activation**
+```    
+        5.5-Signature_41BB.ipynb
+```
